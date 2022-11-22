@@ -1,24 +1,19 @@
-<html>
-<head>
-<title>Chance</title>
-<style>
-.sty{
-margin-top:250px;
-margin-left:450px;
-margin-right:450px;
-padding:5px;
-text-align:center;
-background-color:#c0c0c0
-}
-</style>
-</head>
-<body>
-<div class="sty">
-<p><b><h1>Predicting Chance of Admission</h1></b>
-<br>
-<br>
-<h3><u>Prediction</u></h3><h2><b>You have a chance <b>&#128077;</h2></p>
+{% extends 'index.html' %}
+
+{% block body %}
+
+<div class="container text-center p-4">
+    <div class="d-flex justify-content-center">
+
+        <div class="card" style="width: 34rem;">
+            <img src="..\static\img\chance.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">You Have Chance</h5>
+                <p class="card-text">The model has predicted that you have <strong>{{content[0]}}%</strong> chance</p>
+                <a href="/home" class="btn btn-primary">Go Back</a>
+            </div>
+        </div>
+    </div>
 </div>
-</body>
-</head>
-</html>
+
+{% endblock %}
