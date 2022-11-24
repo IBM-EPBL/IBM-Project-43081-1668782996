@@ -5,7 +5,7 @@ import requests
 
 
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
-API_KEY="dBZwh_kI4ymMDFrMHVa3Qt4_hBk-ezkorDqJNV6t7Nl_"
+API_KEY="0EmGngHajDkEa9fSNwyDGHxNdH2TgedYGByHlbiT8HwS"
 token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey":
  API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
 mltoken = token_response.json()["access_token"]
